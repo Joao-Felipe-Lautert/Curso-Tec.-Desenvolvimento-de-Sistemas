@@ -1,32 +1,108 @@
-body{
-    background-color: rgba(17, 20, 22);
+body {
+    background-color: #1E1E1E;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centraliza os textos e elementos filhos */
 }
-.title{
+
+/* Centraliza a imagem do título */
+.title {
     display: flex;
-    width: 100%;
     justify-content: center;
-    text-align: center;
-}   
-h1{
-    font-size: 50px;
-    color: rgba(17, 20, 22);
-    background-color: chocolate;
-    border: none;
-    border-radius: 20px;
-    padding: 20px;
-    width: 60%;
-}   
-h2{
-    color: chocolate;
-    text-align: justify;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
-p{
-    color: gray;
- }
-.video{
-    position: relative;
-    width: 30%; /* Ajuste para ocupar mais espaço */
-    margin: auto; /* Centraliza horizontalmente */
+
+#title-image {
+    max-width: 100%;
+    height: auto;
+    width: 1000px; /* Ajuste conforme necessário */
+}
+
+/* Centraliza o vídeo */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+    border: 5px solid;
+    border-color: #FF6F00;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+h2 {
+    color: #FF6F00;
+}
+
+p {
+    color: #EAEAEA;
+    max-width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#destaque {
+    color: #0088CC;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#images {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    border: 5px solid;
+    border-color: #FF6F00;
+}
+.carousel {
+    position: relative; /* Adicionado */
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    border: 5px solid #FF6F00;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content; /* Ajusta a largura automaticamente com base no número de slides */
+}
+
+.slide {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
     top: 50%;
-    height: max-content;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
