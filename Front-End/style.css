@@ -2,10 +2,9 @@ body {
     background-color: #1E1E1E;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centraliza os textos e elementos filhos */
+    text-align: center;
 }
 
-/* Centraliza a imagem do título */
 .title {
     display: flex;
     justify-content: center;
@@ -17,10 +16,9 @@ body {
 #title-image {
     max-width: 100%;
     height: auto;
-    width: 1000px; /* Ajuste conforme necessário */
+    width: 1000px;
 }
 
-/* Centraliza o vídeo */
 .video {
     display: flex;
     justify-content: center;
@@ -36,6 +34,20 @@ body {
 
 h2 {
     color: #FF6F00;
+}
+
+h3 {
+    color: #FF6F00;
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+li {
+    color: #EAEAEA;
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 p {
@@ -66,8 +78,13 @@ p {
     border: 5px solid;
     border-color: #FF6F00;
 }
+
+b {
+    color: #0088CC;
+}
+
 .carousel {
-    position: relative; /* Adicionado */
+    position: relative;
     width: 400px;
     overflow: hidden;
     border-radius: 10px;
@@ -79,7 +96,7 @@ p {
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: max-content; /* Ajusta a largura automaticamente com base no número de slides */
+    width: max-content;
 }
 
 .slide {
@@ -93,7 +110,7 @@ button {
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #EAEAEA;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -105,4 +122,9 @@ button {
 
 button:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+a {
+    size-adjust: 20;
+    color: #EAEAEA;
 }
