@@ -34,6 +34,7 @@ body {
 
 h2 {
     color: #FF6F00;
+    font-size: xx-large;
 }
 
 h3 {
@@ -73,10 +74,11 @@ p {
     display: flex;
     align-items: center;
     margin: auto;
-    width: fit-content;
-    height: fit-content;
+    width: min-content;
+    height: min-content;
     border: 5px solid;
     border-color: #FF6F00;
+    border-radius: 1%;
 }
 
 b {
