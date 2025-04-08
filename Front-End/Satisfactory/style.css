@@ -1,69 +1,64 @@
-body {
+body { /*Altera o código como um todo*/
     background-color: #1E1E1E;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.title {
+.title { /*Altera toda a parte do titulo*/
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
-}
-.title :hover {
-    transition-duration: 0.5s;
-    scale: 120%;
+    transition: transform 1s ease;
 }
 
-#title-image {
-    max-width: auto;
-    height: auto;
-    width: 1000px;
+.title:hover { /*Altera a imagem do título quando o mouse está em cima*/
+    transform: scale(1.2);
+    transition-duration: 1s;
 }
 
-.video {
+.video { /*Customisa os videos*/
     justify-content: center;
     display: flex;
     align-items: center;
     margin: auto;
     width: min-content;
     height: min-content;
-    border: 5px solid;
-    border-color: #FF6F00;
+    border: 5px solid #FF6F00;;
     border-radius: 10px;
     overflow: hidden;
     box-shadow:0px 0px 25px #0088CC;
 }
 
-h2 {
+h2 { /*Customisa os Subtitulos*/
     color: #FF6F00;
     font-size: xx-large;
 }
 
-h3 {
+h3 { /*Customisa os títulos terciarios*/
     color: #FF6F00;
     text-align: justify;
     max-width: 80%;
     margin: 0 auto;
 }
 
-li {
+li { /*Customisa o texto dos tópicos*/
     color: #EAEAEA;
     text-align: justify;
     max-width: 80%;
     margin: 0 auto;
 }
 
-p {
+p { /*Customisa o texto em geral*/
     color: #EAEAEA;
     max-width: 80%;
     text-align: justify;
     margin: 0 auto;
 }
 
-#destaque {
+#destaque { /*Customisa algum texto que precise ficar em destaque*/
     color: #0088CC;
     font-size: large;
     display: flex;
@@ -72,13 +67,14 @@ p {
     text-align: center;
     margin: auto;
     width: 100%;
+    font-weight: bold;
 }
 
-b{
+b { /*Customisa o título dos tópicos*/
     color: #0088CC;
 }
 
-.carousel {
+.carousel { /*Customisa o conteudo do carrosel como um todo*/
     position: relative;
     width: 400px;
     overflow: hidden;
@@ -88,19 +84,19 @@ b{
     box-shadow:0px 0px 25px #0088CC;
 }
 
-.carousel-container {
+.carousel-container { 
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: max-content;
 }
 
-.slide {
+.slide { /*customisa as imagens em si*/
     width: 400px;
     height: 250px;
     object-fit: cover;
 }
 
-button {
+button { /*Customisa o Botão*/
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -115,11 +111,10 @@ button {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-button:hover {
+button:hover { /*Altera a customisação do botão quando o mouse está em cima  */
     background: rgba(0, 0, 0, 0.8);
 }
 
-a {
-    size-adjust: 20;
+a { /*Personaliza os ultimos links da página*/
     color: #EAEAEA;
 }
