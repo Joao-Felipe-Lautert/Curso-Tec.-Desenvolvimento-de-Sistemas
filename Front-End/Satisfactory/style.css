@@ -15,7 +15,7 @@ body { /*Altera o código como um todo*/
     size-adjust: 10px;
 }
 
-.title img {
+.title img { /*Ajusta o tamanho da imagem*/
     width: 100%;
     max-width: 800px;
     height: auto;
