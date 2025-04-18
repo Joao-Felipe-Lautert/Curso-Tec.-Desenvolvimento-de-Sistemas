@@ -5,7 +5,7 @@ body { /*Altera o código como um todo*/
     text-align: center;
 }
 
-.title { /*Altera toda a parte do titulo*/
+.title { /*Altera toda a parte do título*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body { /*Altera o código como um todo*/
     transition-duration: 1s;
 }
 
-.video { /*Customisa os videos*/
+.video { /*Customiza os vídeos*/
     justify-content: center;
     display: flex;
     align-items: center;
@@ -53,33 +53,33 @@ body { /*Altera o código como um todo*/
     height: auto;
 }
 
-h2 { /*Customisa os Subtitulos*/
+h2 { /*Customiza os Subtítulos*/
     color: #FF6F00;
     font-size: xx-large;
 }
 
-h3 { /*Customisa os títulos terciarios*/
+h3 { /*Customiza os títulos terciários*/
     color: #FF6F00;
     text-align: justify;
     max-width: 80%;
     margin: 0 auto;
 }
 
-li { /*Customisa o texto dos tópicos*/
+li { /*Customiza o texto dos tópicos*/
     color: #EAEAEA;
     text-align: justify;
     max-width: 80%;
     margin: 0 auto;
 }
 
-p { /*Customisa o texto em geral*/
+p { /*Customiza o texto em geral*/
     color: #EAEAEA;
     max-width: 80%;
     text-align: justify;
     margin: 0 auto;
 }
 
-#destaque { /*Customisa algum texto que precise ficar em destaque*/
+#destaque { /*Customiza algum texto que precise ficar em destaque*/
     color: #0088CC;
     font-size: large;
     display: flex;
@@ -91,11 +91,11 @@ p { /*Customisa o texto em geral*/
     font-weight: bold;
 }
 
-b { /*Customisa o título dos tópicos*/
+b { /*Customiza o título dos tópicos*/
     color: #0088CC;
 }
 
-.carousel { /*Customisa o conteudo do carrosel como um todo*/
+.carousel { /*Customiza o conteúdo do carrossel como um todo*/
     position: relative;
     width: 400px;
     overflow: hidden;
@@ -111,13 +111,13 @@ b { /*Customisa o título dos tópicos*/
     width: max-content;
 }
 
-.slide { /*customisa as imagens em si*/
+.slide { /*customiza as imagens em si*/
     width: 400px;
     height: 250px;
     object-fit: cover;
 }
 
-button { /*Customisa o Botão*/
+button { /*Customiza o Botão*/
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -132,10 +132,10 @@ button { /*Customisa o Botão*/
 .prev { left: 10px; }
 .next { right: 10px; }
 
-button:hover { /*Altera a customisação do botão quando o mouse está em cima  */
+button:hover { /*Altera a customização do botão quando o mouse está em cima  */
     background: rgba(0, 0, 0, 0.8);
 }
 
-a { /*Personaliza os ultimos links da página*/
+a { /*Personaliza os últimos links da página*/
     color: #EAEAEA;
 }
