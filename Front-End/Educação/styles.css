@@ -2,7 +2,30 @@
     max-width: 80%;
     text-align: center;
     margin: auto;
-
+}
+.banner_1 {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://st2.depositphotos.com/8881578/49903/i/450/depositphotos_499036498-stock-photo-consultant-presenting-tag-cloud-information.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.banner_2 {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://cdn.ead.guru/8355/media/public/Sem_T%C3%ADtulo-1_LcasEOu.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.banner_3 {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://leidoinquilinatonapratica.com.br/wp-content/uploads/2018/04/a%C3%A7%C3%A3o-de-despejo-locacao-de-imoveis-4-1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
 }
 .title{
     max-width: 80%;
@@ -10,9 +33,15 @@
     margin: auto;
 }
 .video {
-    text-align: center;
-    max-width: fit-content;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     margin: auto;
+    width: min-content;
+    height: min-content;
+    border: 5px solid #000000;;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .imagem {
     text-align: center;
@@ -37,7 +66,7 @@
     left: 0;
     background-color: #333;
     overflow-x: hidden;
-    transition: 0.5s; /* Transição suave para o movimento da barra */
+    transition: 0.5s;
     padding-top: 60px;
     color: white;
 }
