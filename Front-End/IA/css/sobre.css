@@ -1,0 +1,366 @@
+/* Estilos específicos para a página Sobre */
+
+.page-hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.5;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.page-description {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.content-section {
+    padding: 6rem 0;
+    background: var(--background);
+}
+
+.content-grid {
+    display: grid;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.content-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.content-card:hover::before {
+    transform: scaleX(1);
+}
+
+.content-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.content-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-card h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    clear: both;
+}
+
+.content-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.content-card p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.highlight-box h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.highlight-box p {
+    margin-bottom: 0;
+}
+
+/* Tabela de Comparação */
+.comparison-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.comparison-row {
+    display: contents;
+}
+
+.comparison-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+
+.comparison-header h3 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.comparison-cell {
+    background: white;
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+.comparison-cell strong {
+    color: var(--primary-color);
+}
+
+/* Aplicações Detalhadas */
+.applications-detailed {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.application-item {
+    background: var(--background-alt);
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.application-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+}
+
+.application-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.application-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Lista de Ferramentas */
+.tools-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tool-item {
+    background: var(--background-alt);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.tool-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+.tool-item strong {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.tool-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Tendências Futuras */
+.future-trends {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.future-trends h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.future-trends ul {
+    list-style: none;
+    padding: 0;
+}
+
+.future-trends li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.future-trends li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.future-trends li:last-child {
+    margin-bottom: 0;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 0;
+    background: var(--text-primary);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .page-description {
+        font-size: 1.125rem;
+    }
+    
+    .content-card {
+        padding: 2rem;
+    }
+    
+    .content-icon {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    .comparison-table {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparison-header,
+    .comparison-cell {
+        padding: 1rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .content-section {
+        padding: 4rem 0;
+    }
+    
+    .content-card {
+        padding: 1.5rem;
+    }
+    
+    .content-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .application-item,
+    .tool-item {
+        padding: 1.25rem;
+    }
+    
+    .future-trends {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Entre em Contato Conosco</title>
+    <meta name="description" content="Entre em contato conosco para dúvidas, sugestões ou colaborações sobre IA generativa e integração com Groq API.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>IA Generativa</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="chat.html" class="nav-link">Chat AI</a></li>
+                    <li><a href="api_docs.html" class="nav-link">API Docs</a></li>
+                    <li><a href="contato.html" class="nav-link active">Contato</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="contact-title">
+                    Entre em <span class="gradient-text">Contato</span>
+                </h1>
+                <p class="contact-description">
+                    Tem dúvidas, sugestões ou quer colaborar? Adoraríamos ouvir de você!
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Envie uma Mensagem</h2>
+                        <p>Preencha o formulário abaixo e entraremos em contato em breve.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nome *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Assunto *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="duvida">Dúvida sobre IA Generativa</option>
+                                    <option value="api">Ajuda com API Groq</option>
+                                    <option value="bug">Reportar Bug</option>
+                                    <option value="sugestao">Sugestão de Melhoria</option>
+                                    <option value="colaboracao">Proposta de Colaboração</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Descreva sua dúvida, sugestão ou como podemos ajudar..."></textarea>
+                                <div class="char-counter">
+                                    <span id="messageCount">0</span>/1000 caracteres
+                                </div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Quero receber atualizações sobre IA generativa e novos recursos
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span class="btn-text">Enviar Mensagem</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <svg class="spinner" width="20" height="20" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="31.416" stroke-dashoffset="31.416">
+                                            <animate attributeName="stroke-dasharray" dur="2s" values="0 31.416;15.708 15.708;0 31.416" repeatCount="indefinite"/>
+                                            <animate attributeName="stroke-dashoffset" dur="2s" values="0;-15.708;-31.416" repeatCount="indefinite"/>
+                                        </circle>
+                                    </svg>
+                                    Enviando...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-section">
+                        <h2>Outras Formas de Contato</h2>
+                        
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                        <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <h3>E-mail</h3>
+                                <p>Para dúvidas técnicas e suporte</p>
+                                <a href="mailto:contato@ia-generativa.com">contato@ia-generativa.com</a>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19c-5 0-8-3-8-8s3-8 8-8 8 3 8 8-3 8-8 8z" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <h3>GitHub</h3>
+                                <p>Código fonte e contribuições</p>
+                                <a href="https://github.com/ia-generativa" target="_blank">github.com/ia-generativa</a>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <h3>LinkedIn</h3>
+                                <p>Conecte-se conosco profissionalmente</p>
+                                <a href="https://linkedin.com/company/ia-generativa" target="_blank">linkedin.com/company/ia-generativa</a>
+                            </div>
+                        </div>
+
+                        <div class="faq-section">
+                            <h3>Perguntas Frequentes</h3>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    Como obter uma chave da API Groq?
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Visite <a href="https://console.groq.com/keys" target="_blank">console.groq.com/keys</a>, crie uma conta gratuita e gere sua chave da API. O tier gratuito oferece acesso generoso para desenvolvimento e testes.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    O chat não está funcionando, o que fazer?
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Primeiro, verifique se você configurou sua chave da API nas configurações do chat. Se o problema persistir, verifique sua conexão com a internet e tente novamente. Para problemas técnicos, entre em contato conosco.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    Posso usar este código em meus projetos?
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Sim! Este projeto é open source e você pode usar o código como referência ou base para seus próprios projetos. Consulte nossa documentação da API para exemplos e melhores práticas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    Como posso contribuir para o projeto?
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Adoraríamos sua contribuição! Você pode reportar bugs, sugerir melhorias, contribuir com código ou documentação. Entre em contato conosco para discutir como você pode ajudar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+            <div class="success-content">
+                <div class="success-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" stroke-width="2"/>
+                        <polyline points="22 4 12 14.01 9 11.01" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Mensagem Enviada!</h3>
+                <p>Obrigado por entrar em contato. Responderemos em breve!</p>
+                <button class="btn btn-secondary" onclick="closeSuccessMessage()">Fechar</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IA Generativa</h3>
+                    <p>Explorando o futuro da inteligência artificial através de experiências interativas e educacionais.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="chat.html">Chat AI</a></li>
+                        <li><a href="api_docs.html">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://groq.com" target="_blank">Groq API</a></li>
+                        <li><a href="https://console.groq.com/docs" target="_blank">Documentação</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IA Generativa. Desenvolvido com ❤️ para demonstrar o poder da IA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>
