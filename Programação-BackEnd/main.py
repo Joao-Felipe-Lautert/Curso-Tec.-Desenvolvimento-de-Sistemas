@@ -1,3 +1,9 @@
+#Código de verificação de cidadania
+#Autoria colaborativa de:
+#João Felipe Lautert
+#Felipe Prestes Belusso
+#Desafio proposto pelo Professor Douglas Scarot, na matéria de Programação Back-End
+
 #Definição das variaveis de variações de input's de idade
 inpuIdadeDias = float(0)
 inputIdadeMeses = float(0)
@@ -18,20 +24,27 @@ inputIdade, tipoIdade, eleitor = perguntas()
 if inputIdade > 150:
     inputIdadeMeses = inputIdade
 elif inputIdade > 150:
-    inpuIdadeDias = inputIdade
+    inputIdadeDias = inputIdade
 elif inputIdade <= 150:
     inputIdadeAnos = inputIdade
 
 #Verifica se a idade foi digitada em dias ou anos e partir disso, calculá quantos anos a pessoa tem
 if inputIdadeAnos > 150:
-    print("Falso Idoso, para de mentir, coloque os dados corretamente.")
+    print(f"Idade Falsa, para de mentir, você teria {inputIdadeAnos}, insira os dados corretamente.")
     perguntas()
-elif "M" in tipoIdade:
-    idadeAnos = inputIdade / 12
+if inputIdadeMeses > 22500:
+    print(f"Idade Falsa, para de mentir, você teria {inputIdadeMeses}, insira os dados corretamente.")
+    perguntas()
+if inpuIdadeDias > 54787.5:
+    print(f"Idade Falsa, para de mentir, você teria {inputIdadeDias}, insira os dados corretamente.")
+    perguntas()
+
+if "M" in tipoIdade:
+    idadeAnos = inputIdadeMeses / 12
 elif "D" in tipoIdade:
-    idadeAnos = inputIdade / 365.25
+    idadeAnos = inputIdadeDias / 365.25
 elif "A" in tipoIdade:
-    idadeAnos = inputIdade
+    idadeAnos = inputIdadeAnos
 else:
     print("Tipo de Idade Não especificado! Reinsira os dados: \n")
     perguntas()
