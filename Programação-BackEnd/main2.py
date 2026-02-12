@@ -1,3 +1,9 @@
+#Código de verificação de cidadania
+#Autoria colaborativa de:
+#João Felipe Lautert
+#Felipe Prestes Belusso7
+#Desafio proposto pelo Professor Douglas Scarot, na matéria de Programação Back-End
+
 import calendar
 
 
