@@ -9,5 +9,8 @@ Dalessandro = (Note * 0.9) + (Carros * 0.5)
 #variavel Dalessandro recebe carros vezes 0,5
 print(f"Dalessandro possui {Dalessandro} itens")
 #print utilizando "f" para poder inprimir texto e variavel no mesmo comando
-Lucas = (Note * 0.1) + (Carros * 0.5)
+Ivo = (Note * 0.1) + (Carros * 0.5)
+print(f"ivo possui {Ivo} itens")
+ 
+Lucas = (Carros * 0.5) + (Note * 0.9)
 print(f"Lucas possui {Lucas} itens")
