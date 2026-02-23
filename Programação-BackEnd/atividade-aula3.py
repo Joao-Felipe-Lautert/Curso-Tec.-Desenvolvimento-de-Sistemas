@@ -14,13 +14,13 @@ if operacao == "+":
     print(f"O resuldado da soma é: {resultadoSoma}")
 elif operacao == "-":
     resultadoSub = float(numero1 - numero2)
-    print(f"O resuldado da soma é: {resultadoSub}")
+    print(f"O resuldado da subtração é: {resultadoSub}")
 elif operacao =="*":
     resultadoMult = float(numero1 * numero2)
-    print(f"O resuldado da soma é: {resultadoMult}")
+    print(f"O resuldado da multiplicação é: {resultadoMult}")
 elif operacao == "/":
     resultadoDiv = float(numero1 / numero2)
-    print(f"O resuldado da soma é: {resultadoDiv}")
+    print(f"O resuldado da divisão é: {resultadoDiv}")
 else:
     print("Operação Indefinida. Voltando ao início")
     perguntas()
