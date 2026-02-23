@@ -41,8 +41,8 @@ visor.grid(row=0, column=0, columnspan=4, padx=10, pady=30, sticky="nsew")
 # Estilos
 estilo_num = {"bg": "#333333", "fg": "#ffffff", "font": ("Arial", 12), "borderwidth": 0}
 estilo_op = {"bg": "#ff9f0a", "fg": "#ffffff", "font": ("Arial", 12, "bold"), "borderwidth": 0}
-estilo_esp = {"bg": "#a5a5a5", "fg": "#000000", "font": ("Arial", 12), "borderwidth": 0}
-estilo_cient = {"bg": "#505050", "fg": "#ffffff", "font": ("Arial", 11), "borderwidth": 0}
+estilo_esp = {"bg": "#a5a5a5", "fg": "#000000", "font": ("Arial", 12, "bold"), "borderwidth": 0}
+estilo_cient = {"bg": "#ff9f0a", "fg": "#ffffff", "font": ("Arial", 12, "bold"), "borderwidth": 0}
 
 # Nova Lista de botões organizada por (Texto, Linha, Coluna, Estilo, Valor Real no Código)
 # O "Valor Real" é o que será escrito no visor para o Python entender
