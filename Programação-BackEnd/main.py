@@ -23,7 +23,7 @@ inputIdade, tipoIdade, eleitor = perguntas()
 # Filtra os dados de Idade em Meses, Dias e Anos
 if inputIdade > 150:
     inputIdadeMeses = inputIdade
-elif inputIdade > 150:
+elif inputIdade >= 150:
     inputIdadeDias = inputIdade
 elif inputIdade <= 150:
     inputIdadeAnos = inputIdade
