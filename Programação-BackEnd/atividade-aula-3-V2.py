@@ -31,7 +31,7 @@ def calcular():
 # Janela Principal
 janela = tk.Tk()
 janela.title("Calculadora Pro")
-janela.geometry("380x550") # Aumentei um pouco para caber os botões novos
+janela.geometry("512x512") # Aumentei um pouco para caber os botões novos
 janela.configure(bg="#1c1c1c")
 janela.resizable(False, False)
 
@@ -44,6 +44,7 @@ estilo_num = {"bg": "#333333", "fg": "#ffffff", "font": ("Arial", 12), "borderwi
 estilo_op = {"bg": "#ff9f0a", "fg": "#ffffff", "font": ("Arial", 12, "bold"), "borderwidth": 0}
 estilo_esp = {"bg": "#a5a5a5", "fg": "#000000", "font": ("Arial", 12, "bold"), "borderwidth": 0}
 estilo_cient = {"bg": "#ff9f0a", "fg": "#ffffff", "font": ("Arial", 12, "bold"), "borderwidth": 0}
+estilo_eq = {"bg": "#110085", "fg": "#ffffff", "font": ("Arial", 12, "bold"), "borderwidth": 0}
 
 #Layout de botões da calculadora
 botoes = [
@@ -56,7 +57,7 @@ botoes = [
     # Linha 4: Teclado 7-8-9 e soma
     ('7', 4, 0, estilo_num, '7'), ('8', 4, 1, estilo_num, '8'), ('9', 4, 2, estilo_num, '9'), ('+', 4, 3, estilo_op, '+'),
     # Linha 5: Teclado 4-5-6 e "="
-    ('4', 5, 0, estilo_num, '4'), ('5', 5, 1, estilo_num, '5'), ('6', 5, 2, estilo_num, '6'), ('=', 5, 3, estilo_op, '='),
+    ('4', 5, 0, estilo_num, '4'), ('5', 5, 1, estilo_num, '5'), ('6', 5, 2, estilo_num, '6'), ('=', 5, 3, estilo_eq, '='),
     # Linha 6: Teclado 1-2-3 e 0
     ('1', 6, 0, estilo_num, '1'), ('2', 6, 1, estilo_num, '2'), ('3', 6, 2, estilo_num, '3'), ('0', 6, 3, estilo_num, '0'),
     # Linha 7: Ponto decimal
