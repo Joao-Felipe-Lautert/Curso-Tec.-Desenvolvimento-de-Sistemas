@@ -1,3 +1,4 @@
+#Importe as duas bibliotecas, para funcionalidade completa (somente a "tk" é essencial)
 import tkinter as tk
 import math # Importante para funções avançadas
 
@@ -44,16 +45,22 @@ estilo_op = {"bg": "#ff9f0a", "fg": "#ffffff", "font": ("Arial", 12, "bold"), "b
 estilo_esp = {"bg": "#a5a5a5", "fg": "#000000", "font": ("Arial", 12, "bold"), "borderwidth": 0}
 estilo_cient = {"bg": "#ff9f0a", "fg": "#ffffff", "font": ("Arial", 12, "bold"), "borderwidth": 0}
 
-# Nova Lista de botões organizada por (Texto, Linha, Coluna, Estilo, Valor Real no Código)
-# O "Valor Real" é o que será escrito no visor para o Python entender
+#Layout de botões da calculadora
 botoes = [
+    # Linha 1: Funções de Limpeza, Parênteses e divisão
     ('C', 1, 0, estilo_esp, 'C'), ('(', 1, 1, estilo_esp, '('), (')', 1, 2, estilo_esp, ')'), ('/', 1, 3, estilo_op, '/'),
-    ('sqrt', 2, 0, estilo_cient, 'math.sqrt('), ('x²', 2, 1, estilo_cient, '**2'), ('^', 2, 2, estilo_cient, '**'), ('*', 2, 3, estilo_op, '*'),
-    ('7', 3, 0, estilo_num, '7'), ('8', 3, 1, estilo_num, '8'), ('9', 3, 2, estilo_num, '9'), ('-', 3, 3, estilo_op, '-'),
-    ('4', 4, 0, estilo_num, '4'), ('5', 4, 1, estilo_num, '5'), ('6', 4, 2, estilo_num, '6'), ('+', 4, 3, estilo_op, '+'),
-    ('1', 5, 0, estilo_num, '1'), ('2', 5, 1, estilo_num, '2'), ('3', 5, 2, estilo_num, '3'), ('=', 5, 3, estilo_op, '='),
-    ('0', 6, 0, estilo_num, '0'), ('.', 6, 1, estilo_num, '.'), ('%', 6, 2, estilo_cient, '%'), ('pi', 6, 3, estilo_cient, 'math.pi'),
-    ('n!', 7, 0, estilo_cient, 'math.factorial(')
+    # Linha 2: Raiz, Potências e Fatorial
+    ('sqrt', 2, 0, estilo_cient, 'math.sqrt('), ('x²', 2, 1, estilo_cient, '**2'), ('^', 2, 2, estilo_cient, '**'), ('n!', 2, 3, estilo_cient, 'math.factorial('),
+    # Linha 3: PI, porcentagem, multiplicação e subtração
+    ('pi', 3, 0, estilo_cient, 'math.pi'), ('%', 3, 1, estilo_cient, '%'), ('*', 3, 2, estilo_op, '*'), ('-', 3, 3, estilo_op, '-'),
+    # Linha 4: Teclado 7-8-9 e soma
+    ('7', 4, 0, estilo_num, '7'), ('8', 4, 1, estilo_num, '8'), ('9', 4, 2, estilo_num, '9'), ('+', 4, 3, estilo_op, '+'),
+    # Linha 5: Teclado 4-5-6 e "="
+    ('4', 5, 0, estilo_num, '4'), ('5', 5, 1, estilo_num, '5'), ('6', 5, 2, estilo_num, '6'), ('=', 5, 3, estilo_op, '='),
+    # Linha 6: Teclado 1-2-3 e 0
+    ('1', 6, 0, estilo_num, '1'), ('2', 6, 1, estilo_num, '2'), ('3', 6, 2, estilo_num, '3'), ('0', 6, 3, estilo_num, '0'),
+    # Linha 7: Ponto decimal
+    ('.', 7, 0, estilo_num, '.')
 ]
 
 for (texto, linha, col, estilo, valor_real) in botoes:
