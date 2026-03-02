@@ -1,12 +1,12 @@
-#Crie um programa que receba 2 números, some-os, e retorne o resultado ao Usúario
-#Desáfio proposto pelo Professor Douglas Scariot, na matéria de Programação Back-End
+#Código de verificação de cidadania - Aula 3
+#Desafio proposto pelo Professor Douglas Scarot, na matéria de Programação Back-End
 
 import math
 
 #Função que garante a execução continua do código (Código executa eternamente)
 def perguntas():
     while True:
-        #Printa "-" 30 vezes para divisão de cada loop do código rodado
+        #Printa "-"  vezes para divisão de cada loop do código rodado
         print("-" * 148)
         try:
             #Inserção de dados por meio de perguntas ao usuário

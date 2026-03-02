@@ -1,7 +1,7 @@
-#Código de verificação de cidadania
+#Código de verificação de cidadania - Aula 1
 #Autoria colaborativa de:
 #João Felipe Lautert
-#Felipe Prestes Belusso7
+#Felipe Prestes Belusso
 #Desafio proposto pelo Professor Douglas Scarot, na matéria de Programação Back-End
 def obter_dados():
     while True:

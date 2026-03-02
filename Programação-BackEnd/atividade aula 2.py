@@ -1,3 +1,6 @@
+#Código de verificação de cidadania - Aula 2
+#Desafio proposto pelo Professor Douglas Scarot, na matéria de Programação Back-End
+
 Carros = int(input("Digite quantos carros Dalessandro possui \n"))
 #variavel carros recebe o que for digitado
 Note = int(input("Digite quantos notebooks Ivo tem \n"))

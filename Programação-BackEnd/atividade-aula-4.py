@@ -1,4 +1,6 @@
-#Atividade proposta pelo professor Douglas Scariot na matéria de Programação Back-End
+#Código de verificação de cidadania - Aula 4
+#Desafio proposto pelo Professor Douglas Scarot, na matéria de Programação Back-End
+
 def geral():
    #loop de repetição para funcionamento infinito
    while True:
