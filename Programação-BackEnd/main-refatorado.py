@@ -7,15 +7,15 @@ def obter_dados():
     while True:
         try:
             valor = float(input("Digite sua Idade: "))
-            tipo = input("Digite (D) para dias, (M) para meses ou (A) para anos: ").upper()
+            tipo = input("Digite (D) para dias, (M) para meses ou (A) para anos: ").upper() #".upper" converte a entrada para maiúsculo
             eleitor = int(input("Digite 1 se tiver título de Eleitor e 2 se não tiver: "))
             
             # Cálculo da idade em anos baseado no tipo
-            if tipo == 'A':
+            if tipo == "A":
                 idade_anos = valor
-            elif tipo == 'M':
+            elif tipo == "M":
                 idade_anos = valor / 12
-            elif tipo == 'D':
+            elif tipo == "D":
                 idade_anos = valor / 365.25
             else:
                 print("Tipo inválido! Tente novamente.")
