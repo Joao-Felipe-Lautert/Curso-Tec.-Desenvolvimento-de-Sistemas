@@ -12,7 +12,7 @@ def analisar_vendas(caminho_csv="vendas_empresa.csv"):
         return
 
     # Configurações de Estilo
-    sns.set_theme(style="whitegrid")
+    sns.set_theme(style="dark")
     plt.rcParams["figure.figsize"] = (12, 6)
 
     try:
@@ -35,7 +35,7 @@ def analisar_vendas(caminho_csv="vendas_empresa.csv"):
         plt.figure()
         sns.barplot(data=vendedor_resumo, x="Vendedor", y="Total Vendido (R$)", palette="viridis")
         plt.title("Total de Vendas por Vendedor", fontsize=14)
-        plt.xticks(rotation=45)
+        plt.xticks(rotation=0)
         plt.tight_layout()
         plt.savefig("01_vendas_por_vendedor.png")
         print("-> Gráfico '01_vendas_por_vendedor.png' gerado.")
@@ -67,7 +67,7 @@ def analisar_vendas(caminho_csv="vendas_empresa.csv"):
         plt.figure()
         sns.lineplot(data=semana_resumo, x="Semana (Início)", y="Valor_Total", marker="s", color="seagreen")
         plt.title("Desempenho de Vendas por Semana", fontsize=14)
-        plt.xticks(rotation=45, ha="right")
+        plt.xticks(rotation=90, ha="center")
         plt.tight_layout()
         plt.savefig("03_vendas_por_semana.png")
         print("-> Gráfico '03_vendas_por_semana.png' gerado.")
@@ -79,5 +79,6 @@ def analisar_vendas(caminho_csv="vendas_empresa.csv"):
     except Exception as e:
         print(f"Ocorreu um erro durante o processamento: {e}")
 
+#Chama a função quando o script é executado diretamente
 if __name__ == "__main__":
     analisar_vendas("vendas_empresa.csv")
